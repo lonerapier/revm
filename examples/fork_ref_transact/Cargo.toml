@@ -1,0 +1,16 @@
+[package]
+name = "examples-revm"
+version = "0.0.0"
+publish = false
+authors = ["Dragan Rakita <dragan0rakita@gmail.com>"]
+
+license.workspace = true
+edition.workspace = true
+
+[dev-dependencies]
+anyhow.workspace = true
+bytes.workspace = true
+hex.workspace = true
+ethers.workspace = true
+tokio = { workspace = true, features = ["macros"] }
+revm = { path = "../../crates/revm", features = ["ethersdb"]}

@@ -1,4 +1,3 @@
-use std::{str::FromStr, sync::Arc};
 use anyhow::{Ok, Result};
 use bytes::Bytes;
 use ethers::{
@@ -11,6 +10,7 @@ use revm::{
     primitives::{ExecutionResult, Output, TransactTo, B160, U256 as rU256},
     Database, EVM,
 };
+use std::{str::FromStr, sync::Arc};
 
 #[tokio::main]
 async fn main() -> Result<()> {
